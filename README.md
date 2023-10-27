@@ -5,9 +5,9 @@
 
 - Developed by Maryam Parvaz 🙎
 
-- Created - 2023-7-11
+- Created - 2023-8-5
 
-- Technologies Used - Html , css 😍
+- Technologies Used - Html , css , bootstrap😍
 
 - Hooks Used : useState 
 
