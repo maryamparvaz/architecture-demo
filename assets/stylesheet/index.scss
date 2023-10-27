@@ -1,0 +1,908 @@
+::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+li {
+        list-style-type: none;
+}
+
+a {
+        text-decoration: none;
+        color: inherit;
+}
+
+body {
+        background: linear-gradient(to right, black 519px, #a6a182 1px);
+        background-size: 520px 100%;
+        overflow-x: hidden;
+}
+
+@font-face {
+        font-family: menu;
+        src: url(../font/Montserrat-Regular.ttf);
+}
+
+
+.head-top {
+        height: 100px;
+        justify-content: space-between;
+
+        >ul {
+                >li {
+                        position: relative;
+
+                        >a {
+                                font-size: 19px;
+                                height: 100%;
+                                color: white;
+                                font-family: menu;
+
+                                &:hover {
+                                        color: #a6a182;
+                                }
+
+
+                        }
+
+                        &:hover>ul {
+                                opacity: 1;
+                                visibility: visible;
+                        }
+
+                        >ul {
+                                position: absolute;
+                                top: 50px;
+                                left: 0;
+                                background-color: #1b1b1b;
+                                opacity: 0;
+                                visibility: hidden;
+                                transition: .4s;
+                                z-index: 1;
+
+                                >li {
+                                        >a {
+                                                font-size: 18px;
+                                                color: white;
+
+                                                &:hover {
+                                                        color: #a6a182;
+                                                }
+                                        }
+                                }
+                        }
+
+
+                }
+        }
+
+        >div>a>i {
+                font-size: 20px;
+                color: white;
+
+                &:hover {
+                        color: #a6a182;
+                }
+        }
+}
+
+.sliderone {
+        >.box1 {
+                background-color: #1b1b1b;
+                position: relative;
+                z-index: 23;
+
+
+                @media screen and (min-width:900px) {
+                        right: -160px;
+                        top: 37px;
+                        height: 250px;
+                }
+
+
+                @media screen and (min-width:1200px) {
+                        right: -150px;
+                        top: 37px;
+                        height: 300px;
+                }
+
+                @media screen and (min-width:1400px) {
+                        right: -160px;
+                        top: 87px;
+                        height: 450px;
+                }
+
+                >* {
+                        font-size: 20px;
+                }
+
+                >span,
+                >a {
+                        font-size: 14px;
+                        color: #a6a182;
+
+
+                }
+
+                >span {
+                        margin-top: 40px;
+                }
+
+                >a {
+                        margin-top: 10px;
+
+                        &:hover {
+                                color: white;
+                        }
+                }
+
+                >p {
+                        position: relative;
+                        font-weight: bold;
+
+                        &::after {
+                                content: '';
+                                width: 1px;
+                                height: 80px;
+                                background-color: #a6a182b0;
+                                left: 36px;
+                                top: -89px;
+                                position: absolute;
+
+                                @media screen and (min-width:1200px) {
+                                        height: 50px;
+                                        left: 36px;
+                                        top: 100px;
+                                }
+
+                                @media screen and (min-width:1400px) {
+                                        height: 90px;
+                                        left: 36px;
+                                        top: 70px;
+                                }
+
+                        }
+
+                }
+        }
+}
+
+.page-two {
+        background-color: #1b1b1b;
+        min-height: 100vh;
+
+
+
+        >div {
+                &:nth-of-type(1) {
+
+                        >div {
+                                margin: 20px 0;
+
+
+                                >img {
+                                        height: 50px;
+                                        width: 200px;
+                                }
+
+                                >a {
+                                        >i {
+                                                font-size: 30px;
+                                                color: white;
+
+                                                &:hover {
+                                                        color: #a6a182;
+                                                }
+                                        }
+                                }
+
+                                >p {
+                                        color: #999;
+                                }
+
+                                >span {
+                                        color: #a6a182;
+                                        font-weight: bold;
+                                }
+
+                        }
+                }
+
+                &:nth-of-type(2) {
+                        position: relative;
+                        // background-color: aqua;
+                        min-height: 80vh;
+                        justify-content: space-between;
+
+                        &::before {
+                                content: 'ABOUT';
+                                width: 100%;
+                                font-size: 35vh;
+                                text-shadow: #e0e0e003 1px 1px 0;
+                                color: #2b2a2a;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+
+
+                                @media screen and (max-width:900px) {
+                                        display: none;
+                                }
+
+                                @media screen and (min-width:1200px) {
+                                        font-size: 40vh;
+                                }
+
+                                @media screen and (min-width:1400px) {
+                                        font-size: 25vh;
+                                }
+                        }
+
+                        >figure {
+                                height: 550px;
+
+                                // position: absolute;
+                                // bottom: -64px;
+                                // left: 0;
+
+
+
+
+
+
+
+                                >img {
+                                        height: 100%;
+
+                                        @media screen and (max-width:600px) {
+                                                height: 50%;
+                                        }
+
+                                        @media screen and (min-width:601px) {
+                                                height: 50%;
+                                        }
+
+                                        @media screen and (min-width:1000px) {
+                                                height: 100%;
+                                        }
+
+                                        @media screen and (min-width:1400px) {
+                                                height: 90%;
+                                        }
+                                }
+                        }
+
+                        >div {
+                                // background-color: #a6a182;
+                                position: relative;
+
+                                @media screen and (min-width:1400px) {
+                                        width: 40%;
+                                }
+
+
+
+                                * {
+                                        margin: 10px 0;
+                                        color: #999;
+                                }
+
+                                >h4 {
+                                        font-size: 50px;
+
+                                        @media screen and (max-width:910px) {
+                                                font-size: 30px;
+                                        }
+                                }
+
+                                >a {
+                                        background-color: rgb(99, 97, 97);
+                                        width: 150px;
+                                        height: 50px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        color: white;
+                                        position: relative;
+                                        z-index: 1;
+
+                                        &::before {
+                                                content: '';
+                                                width: 100%;
+                                                height: 100%;
+                                                border: #999;
+                                                position: absolute;
+                                                bottom: -10px;
+                                                right: -10px;
+                                                border: 1px solid white;
+                                                // z-index: -1;
+                                                display: flex;
+
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+
+// between
+
+.betweenpage {
+        background-image: url(../img/10.jpg);
+        background-size: cover;
+        background-color: #1a1919;
+
+        >div {
+                >i {
+                        font-size: 30px;
+                        color: white;
+                        border: 1px dotted white;
+                        border-radius: 50%;
+                        padding: 10px;
+
+
+                }
+
+                >div {
+                        >span {
+                                color: white;
+                                font-size: 20px;
+                        }
+                }
+        }
+}
+
+// page three
+
+.pagethree {
+        background-color: #1b1b1b;
+        position: relative;
+
+        &::before {
+                content: 'RUNNING';
+                width: 100%;
+                font-size: 35vh;
+                text-shadow: #e0e0e003 1px 1px 0;
+                color: #2b2a2a;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+
+
+                @media screen and (max-width:1200px) {
+                        display: none;
+                }
+
+                @media screen and (min-width:1201px) {
+                        font-size: 35vh;
+                }
+
+                @media screen and (min-width:1400px) {
+                        font-size: 20vh;
+                }
+        }
+
+        >div {
+
+
+                &:nth-of-type(1) {
+                        >figure {
+                                position: relative;
+
+                                &:hover>figcaption {
+                                        transform: perspective(1200px) rotateY(0deg);
+                                }
+
+                                >figcaption {
+
+                                        background-color: black;
+                                        font-size: 16px;
+                                        color: #a6a182;
+                                        position: absolute;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        text-align: center;
+                                        transform: perspective(1200px) rotateY(90deg);
+                                        transition: 1s;
+
+
+
+
+
+                                        @media screen and (max-width:1000px) {
+                                                width: 200px;
+                                                height: 300px;
+                                                top: 66px;
+                                                right: -105px;
+                                        }
+
+                                        @media screen and (min-width:1001px) {
+                                                width: 200px;
+                                                height: 300px;
+                                                top: 66px;
+                                                right: -105px;
+                                        }
+
+                                        @media screen and (min-width:1400px) {
+                                                width: 300px;
+                                                height: 300px;
+                                                top: 66px;
+                                                right: -105px;
+                                        }
+                                }
+                        }
+                }
+
+                &:nth-of-type(2) {
+                        >figure {
+                                position: relative;
+
+                                &:hover>figcaption {
+                                        transform: perspective(1200px) rotateY(0deg);
+                                }
+
+                                >figcaption {
+
+                                        background-color: black;
+                                        font-size: 16px;
+                                        color: #a6a182;
+                                        position: absolute;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        text-align: center;
+                                        transform: perspective(1200px) rotateY(90deg);
+                                        transition: 1s;
+                                }
+
+                                &:nth-of-type(1) {
+                                        >figcaption {
+                                                @media screen and (max-width:1000px) {
+                                                        width: 150px;
+                                                        height: 200px;
+                                                        top: 50px;
+                                                        left: 160px;
+                                                }
+
+                                                @media screen and (min-width:1001px) {
+                                                        width: 170px;
+                                                        height: 200px;
+                                                        top: 50px;
+                                                        left: 160px;
+                                                }
+
+                                                @media screen and (min-width:1400px) {
+                                                        width: 170px;
+                                                        height: 200px;
+                                                        top: 50px;
+                                                        left: 160px;
+                                                }
+
+
+                                        }
+
+                                }
+
+                                &:nth-of-type(2) {
+                                        >figcaption {
+                                                @media screen and (max-width:1000px) {
+                                                        width: 250px;
+                                                        height: 200px;
+                                                        top: 50px;
+                                                        right: -50px;
+                                                }
+
+                                                @media screen and (min-width:1001px) {
+                                                        width: 250px;
+                                                        height: 200px;
+                                                        top: 50px;
+                                                        right: -50px;
+                                                }
+
+
+                                        }
+
+                                }
+                        }
+                }
+        }
+}
+
+// page foure
+
+.pagefour {
+        background-color: #1b1b1b;
+        min-height: 50vh;
+        padding-top: 60px;
+        position: relative;
+
+        >h2 {
+                font-weight: bolder;
+        }
+
+        >p {
+                text-align: center;
+                position: relative;
+                font-size: 17px;
+
+
+
+                @media screen and (min-width:1400px) {
+                        font-size: 20px;
+                        margin-top: -60px;
+                }
+        }
+
+        &::before {
+                content: 'GALLERY';
+                width: 100%;
+                font-size: 35vh;
+                text-shadow: #e0e0e003 1px 1px 0;
+                color: #2b2a2a;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+
+
+                @media screen and (max-width:1200px) {
+                        display: none;
+                }
+
+                @media screen and (min-width:1201px) {
+                        font-size: 25vh;
+                }
+
+                @media screen and (min-width:1400px) {
+                        font-size: 20vh;
+                }
+        }
+}
+
+// page five
+
+.pagefive {
+        background-color: #1b1b1b;
+
+        >figure {
+                position: relative;
+                display: flex;
+
+                @media screen and (min-width:900px) {
+                        width: 40%;
+                }
+
+                &:hover>figcaption {
+                        transform: perspective(1200px) rotateY(0deg);
+                }
+
+                >figcaption {
+                        width: 50%;
+                        height: 40%;
+                        background-color: #1b1b1b;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        padding: 20px;
+                        transform-origin: right;
+                        transform: perspective(1200px) rotateY(-90deg);
+                        transition: .8s;
+
+                        * {
+                                color: #a6a182;
+                                width: 100%;
+                                font-size: 17px;
+                        }
+
+                        >a {
+                                &:hover {
+                                        color: white;
+                                }
+                        }
+
+                        >p {
+                                font-size: 20px;
+                        }
+                }
+        }
+}
+
+// page six
+
+.pagesix {
+        background-color: #1b1b1b;
+        padding: 0 80px;
+
+        @media screen and (max-width:1200px) {
+                padding: 40px;
+        }
+
+        >div {
+                background-color: black;
+                margin-top: 90px;
+                padding: 50px;
+
+
+
+                @media screen and (max-width:1200px) {
+                        margin-top: 50px;
+                }
+
+                * {
+                        color: white;
+                }
+
+                >p {
+                        text-align: center;
+                }
+
+                >span {
+                        color: #a6a182;
+                }
+        }
+}
+
+// page seven
+
+.pageseven {
+        background-color: #1b1b1b;
+
+        >div {
+                &:nth-of-type(1) {
+                        min-height: 50vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+
+                        &::before {
+                                content: 'LATEST';
+                                width: 100%;
+                                font-size: 35vh;
+                                text-shadow: #e0e0e003 1px 1px 0;
+                                color: #2b2a2a;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                letter-spacing: 50px;
+
+
+
+                                @media screen and (max-width:1000px) {
+                                        display: none;
+                                }
+
+                                @media screen and (min-width:1201px) {
+                                        font-size: 25vh;
+                                }
+
+                                @media screen and (min-width:1400px) {
+                                        font-size: 20vh;
+                                }
+                        }
+
+                        >h4 {
+                                font-size: 3rem;
+                                color: white;
+                                position: relative;
+
+                                @media screen and (max-width:1000px) {
+                                        font-size: 2rem;
+                                }
+                        }
+
+
+                }
+
+                &:nth-of-type(2) {
+                        >figure {
+                                position: relative;
+                                display: flex;
+
+                                &:hover::after {
+                                        transform: scale(1);
+                                }
+
+                                &:hover>img {
+                                        opacity: 1;
+                                }
+
+                                &:hover>div {
+                                        opacity: 1;
+                                }
+
+
+
+
+                                &::after {
+                                        content: '01';
+                                        width: 10%;
+                                        height: 10%;
+                                        // background-color: aqua;
+                                        position: absolute;
+                                        left: 30px;
+                                        bottom: 30px;
+                                        font-size: 45px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        transform: scale(0);
+                                        transition: 1s;
+                                        color: white;
+
+                                }
+
+                                &:nth-of-type(2) {
+                                        &::after {
+                                                content: '02';
+                                        }
+                                }
+
+                                &:nth-of-type(3) {
+                                        &::after {
+                                                content: '03';
+                                        }
+                                }
+
+                                >img {
+                                        opacity: 0;
+                                        transition: 1s;
+                                }
+
+                                >div {
+                                        width: 83.5%;
+                                        height: 100%;
+                                        background-color: rgba(0, 0, 0, 0.554);
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        transition: 1s;
+                                        z-index: 1;
+                                        opacity: 0;
+                                }
+
+                                >figcaption {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        padding: 20px;
+                                        z-index: 2;
+
+                                        * {
+                                                width: 100%;
+                                                margin: 10px 0;
+                                        }
+
+                                        >p {
+                                                color: white;
+                                                font-size: 20px;
+                                        }
+
+                                        >span {
+                                                color: #a6a182;
+                                                font-size: 17px;
+                                        }
+
+                                        >a {
+                                                color: #a6a182;
+                                                font-size: 17px;
+                                        }
+
+                                        // @media screen and (min-width:1000px) {
+                                        //         height: 50%;
+                                        // }
+
+
+                                }
+                        }
+
+                }
+        }
+}
+
+// footer
+
+footer {
+        padding: 30px;
+        background-color: #1b1b1b;
+
+        >section {
+                background-color: black;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 60px;
+                // padding-left: 50px;
+                position: relative;
+
+                * {
+                        display: flex;
+                        justify-content: center;
+                }
+
+                >h4 {
+                        font-size: 50px;
+                        color: #999;
+                        text-shadow: #e0e0e003 1px 1px 0;
+                        color: #2b2a2a;
+                        margin-bottom: 20px;
+
+                        @media screen and (min-width:1000px) {
+                                rotate: 180deg;
+                                padding: 0;
+                                background-color: #1a191900;
+                                writing-mode: vertical-rl;
+                                font-size: 70px;
+                                position: absolute;
+                                left: -80px;
+                                top: 30px;
+
+                        }
+
+                }
+
+
+                >div {
+                        position: relative;
+
+
+                        &:nth-of-type(1) {
+
+                                >div {
+                                        >span {
+                                                color: #a6a182b0;
+                                        }
+                                }
+                        }
+
+                        &:nth-of-type(2) {
+                                >ul {
+                                        >li {
+                                                >a {
+                                                        i {
+                                                                color: white;
+                                                                background-color: #1b1b1b;
+                                                                border-radius: 50%;
+                                                                padding: 10px;
+
+                                                                @media screen and (min-width:900px) {
+                                                                        padding: 0;
+                                                                        background-color: #1a191900;
+                                                                }
+
+
+                                                                &:hover {
+                                                                        color: #a6a182;
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                }
+
+                                >div {
+                                        color: #999;
+
+                                        >span {
+                                                font-size: 12px;
+                                        }
+                                }
+
+                                >p {
+                                        color: #999;
+                                        font-size: 12px;
+                                }
+                        }
+                }
+        }
+
+}
