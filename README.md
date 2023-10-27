@@ -1,7 +1,7 @@
 # architecture-demo
 ![screencapture-file-C-Users-DELL-Desktop-jalase16-project1-index-html-2023-10-27-08_25_56](https://github.com/maryamparvaz/architecture-demo/assets/124708513/05d4fc32-acb5-4a87-8b9c-610d2449142c)
 
-- [Demo Project]( https://maryamparvaz.github.io/men-shop/)
+- [Demo Project](https://maryamparvaz.github.io/architecture-demo/)
 
 - Developed by Maryam Parvaz 🙎
 
